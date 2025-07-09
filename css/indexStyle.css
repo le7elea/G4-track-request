@@ -1,175 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
-        background: #f7f6f2;
-        color: #212529;
-        overflow-x: hidden;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
+  background: #f7f6f2;
+  color: #212529;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
-      /* Sidebar */
-      #layoutSidenav_nav {
-        background-color: #b48a2c;
-        width: 220px;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        overflow-y: auto;
-      }
-      .sidebar-header {
-        text-align: center;
-        padding: 1rem;
-        border-bottom: none;
-      }
-      .sidebar-header img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-      .sidebar-header h5 {
-        color: #fff;
-        margin-top: 0.5rem;
-        font-size: 1rem;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-      }
-      .sidebar-header h6 {
-        color: #fff;
-        margin-top: 0.5rem;
-        font-size: 1rem;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-      }
-      .sb-sidenav .nav-link {
-        color: #fff;
-        padding: 0.75rem 1.25rem;
-        font-weight: 500;
-        border-radius: 0.375rem;
-        margin: 0.25rem 1rem;
-        transition: background 0.2s, color 0.2s;
-      }
-      .sb-sidenav .nav-link:hover,
-      .sb-sidenav .nav-link.active {
-        background-color: #e6c77c;
-        color: #b48a2c;
-      }
+/* Sidebar */
+#layoutSidenav_nav {
+  background-color: #b48a2c;
+  width: 220px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  /* border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem; */
+  overflow: hidden;
+}
 
-      .sb-sidenav-footer {
-        text-align: center;
-        padding: 1rem;
-        background-color: #b48a2c;
-        border-top: none;
-        margin-top: auto; /* Makes it stick to the bottom */
-      }
-      .sb-sidenav-footer a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: 500;
-      }
-      /* .sb-sidenav-footer a:hover {
+/* #layoutSidenav_nav:hover {
+  width: 200px;
+} */
+.sidebar-header {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: none;
+}
+.sidebar-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.sidebar-header h5 {
+  color: #fff;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.sidebar-header h6 {
+  color: #fff;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.sb-sidenav .nav-link {
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  margin: 0.25rem 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+.sb-sidenav .nav-link:hover,
+.sb-sidenav .nav-link.active {
+  background-color: #e6c77c;
+  color: #b48a2c;
+}
+
+.sb-sidenav-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #b48a2c;
+  border-top: none;
+  margin-top: auto; /* Makes it stick to the bottom */
+}
+.sb-sidenav-footer a {
+  color: #fff;
+  font-family: "Poppins";
+  text-decoration: none;
+  font-weight: 500;
+}
+/* .sb-sidenav-footer a:hover {
         color: #b48a2c;
       } */
-      .sb-sidenav .nav-link.small-link {
-        font-size: 0.85rem;
-        padding: 0.4rem 0.75rem;
-      }
-      .sb-sidenav .nav-link.small-link i {
-        font-size: 1rem; /* smaller icon */
-      }
+.sb-sidenav .nav-link.small-link {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.75rem;
+}
+.sb-sidenav .nav-link.small-link i {
+  font-size: 1rem; /* smaller icon */
+}
 
-      #layoutSidenav_content {
-        margin-left: 220px;
-        transition: all 0.3s ease;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-      .content-wrapper {
-        padding: 1.5rem 1rem;
-        flex: 1;
-      }
-      .card-header {
-        display: none;
-      }
-      .card-body {
-        border: 1px solid #e0d7c3;
-        border-radius: 0.5rem;
-        overflow-x: auto;
-        padding: 0;
-      }
-      .custom-white-table thead th {
-        background-color: #9b6c1f; /* Table header */
-        color: #fff; /* White text */
-      }
+#layoutSidenav_content {
+  margin-left: 220px;
+  transition: all 0.3s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.content-wrapper {
+  padding: 1.5rem 1rem;
+  flex: 1;
+}
+.card-header {
+  display: none;
+}
+.card-body {
+  border: 1px solid #e0d7c3;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  padding: 0;
+}
+.custom-white-table thead th {
+  background-color: #9b6c1f; /* Table header */
+  color: #fff; /* White text */
+}
 
-      .custom-white-table {
-        border-collapse: separate;
-        border-spacing: 0;
-      }
-      .custom-white-table th,
-      .custom-white-table td {
-        border: 1px solid #e0d7c3;
-        padding: 0.5rem 0.75rem;
-      }
-      .custom-white-table tbody {
-        background-color: #fff;
-      }
-      .custom-white-table tbody tr:hover {
-        background-color: #e6c77c;
-      }
+.custom-white-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.custom-white-table th,
+.custom-white-table td {
+  border: 1px solid #e0d7c3;
+  padding: 0.5rem 0.75rem;
+}
+.custom-white-table tbody {
+  background-color: #fff;
+}
+.custom-white-table tbody tr:hover {
+  background-color: #e6c77c;
+}
 
-      .table-footer-controls {
-        background-color: #fff;
-        border-radius: 0.75rem;
-        padding: 0.75rem 1rem;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+.table-footer-controls {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-      .pagination .page-link {
-        color: #b48a2c;
-        border-radius: 0.375rem;
-      }
-      .pagination .active .page-link {
-        background-color: #fff;
-        border-color: #e0d7c3;
-        color: #9b6c1f;
-      }
+.pagination .page-link {
+  color: #b48a2c;
+  border-radius: 0.375rem;
+}
+.pagination .active .page-link {
+  background-color: #fff;
+  border-color: #e0d7c3;
+  color: #9b6c1f;
+}
 
-      .btn-update-status,
-      .btn-approve {
-        background-color: #9b6c1f;
-        color: #fff;
-        font-weight: 500;
-        border: none;
-      }
-      .btn-update-status:hover,
-      .btn-approve:hover {
-        background-color: #b48a2c;
-        color: #fff;
-      }
+.btn-update-status,
+.btn-approve {
+  background-color: #9b6c1f;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+}
+.btn-update-status:hover,
+.btn-approve:hover {
+  background-color: #b48a2c;
+  color: #fff;
+}
 
-      footer {
-        background-color: #f7f6f2;
-        color: #b48a2c;
-        font-size: 0.875rem;
-        border-top: 1px solid #e0d7c3;
-        padding: 1rem;
-      }
+footer {
+  background-color: #f7f6f2;
+  color: #b48a2c;
+  font-size: 0.875rem;
+  border-top: 1px solid #e0d7c3;
+  padding: 1rem;
+}
 
-      .modal-content .btn-dark {
-        background-color: #9b6c1f;
-      }
-      .section-header {
-        background-color: #b48a2c; /* same as sidebar */
-        color: #fff;
-        font-weight: 600;
-        padding: 0.75rem 1rem;
-        border-radius: 0.5rem; /* All corners rounded */
-        text-transform: uppercase;
-        font-size: 1rem;
-      }
+.modal-content .btn-dark {
+  background-color: #9b6c1f;
+}
+.section-header {
+  background-color: #b48a2c; /* same as sidebar */
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem; /* All corners rounded */
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.sidebar-link-active {
+  color: #000000 !important;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+.small-button {
+  padding: 2px 8px; /* smaller space around the text */
+  font-size: 12px; /* keep text readable */
+  line-height: 1;
+  width: fit-content; /* shrink width to fit content */
+}
+.button-container {
+  display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: center; /* vertically center */
+  height: 100%; /* or specify height like 60px */
+}
