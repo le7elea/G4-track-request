@@ -151,14 +151,14 @@ body {
 
 .btn-update-status,
 .btn-approve {
-  background-color: #9b6c1f;
+  background-color: #b48a2c;
   color: #fff;
   font-weight: 500;
   border: none;
 }
 .btn-update-status:hover,
 .btn-approve:hover {
-  background-color: #b48a2c;
+  background-color: #9b6c1f;
   color: #fff;
 }
 
@@ -171,7 +171,7 @@ footer {
 }
 
 .modal-content .btn-dark {
-  background-color: #9b6c1f;
+  background-color: #e6c77c;
 }
 .section-header {
   background-color: #b48a2c; /* same as sidebar */
@@ -191,7 +191,14 @@ footer {
   padding: 2px 8px; /* smaller space around the text */
   font-size: 12px; /* keep text readable */
   line-height: 1;
-  width: fit-content; /* shrink width to fit content */
+  width: fit-content;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* shrink width to fit content */
+}
+.sidebar-link-active.small-button:hover {
+  background-color: #a97414; /* darker gold on hover */
+  color: white;
+  text-decoration: none;
 }
 .button-container {
   display: flex;
